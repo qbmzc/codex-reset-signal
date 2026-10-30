@@ -1,0 +1,58 @@
+
+name: Test DingTalk Notification
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test message
+        env:
+          WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK_URL }}
+          SECRET: ${{ secrets.DINGTALK_SIGN_SECRET }}
+        run: |
+          node --input-type=module <<'NODE'
+          import { createHmac } from "node:crypto";
+
+          if (!process.env.WEBHOOK) {
+            throw new Error("Missing DINGTALK_WEBHOOK_URL");
+          }
+
+          const url = new URL(process.env.WEBHOOK);
+          const secret = process.env.SECRET;
+
+          if (secret) {
+            const timestamp = String(Date.now());
+            const sign = createHmac("sha256", secret)
+              .update(`${timestamp}\n${secret}`)
+              .digest("base64");
+
+            url.searchParams.set("timestamp", timestamp);
+            url.searchParams.set("sign", sign);
+          }
+
+          const res = await fetch(url, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              msgtype: "markdown",
+              markdown: {
+                title: "Codex Reset 测试",
+                text: "### Codex Reset\n\nGitHub Actions 钉钉通知测试成功！"
+              }
+            })
+          });
+
+          const data = await res.json();
+          if (!res.ok || data.errcode !== 0) {
+            throw new Error(
+              `DingTalk failed: HTTP ${res.status}, code ${data.errcode}`
+            );
+          }
+
+          console.log("DingTalk notification sent successfully");
+          NODE
