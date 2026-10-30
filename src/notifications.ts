@@ -190,6 +190,63 @@ export function createTargets(
         });
       },
     );
+  
+  // DingTalk direct notification
+  const dingUrl = process.env.DINGTALK_WEBHOOK_URL?.trim();
+  const dingSecret = process.env.DINGTALK_SIGN_SECRET?.trim();
+
+  if (dingUrl) {
+    const endpoint = new URL(dingUrl);
+
+    if (
+      endpoint.protocol !== "https:" ||
+      endpoint.hostname !== "oapi.dingtalk.com" ||
+      endpoint.pathname !== "/robot/send" ||
+      !endpoint.searchParams.has("access_token")
+    ) {
+      throw new Error("Invalid DingTalk webhook URL");
+    }
+
+    add("dingtalk", dingUrl, async (item) => {
+      const url = new URL(dingUrl);
+
+      // Optional DingTalk HMAC-SHA256 signature
+      if (dingSecret) {
+        const timestamp = String(Date.now());
+        const sign = createHmac("sha256", dingSecret)
+          .update(`${timestamp}\n${dingSecret}`)
+          .digest("base64");
+
+        url.searchParams.set("timestamp", timestamp);
+        url.searchParams.set("sign", sign);
+      }
+
+      const message = renderText(
+        item.post,
+        item.events,
+        config.timezone
+      );
+
+      const response = await request(url, {
+        msgtype: "markdown",
+        markdown: {
+          title: "Codex Reset",
+          text: `### Codex Reset\n\n${message.slice(0, 3000)}`
+        }
+      });
+
+      const result = await response.json() as {
+        errcode?: number;
+      };
+
+      if (result.errcode !== 0) {
+        throw new Error(
+          `DingTalk rejected: ${result.errcode ?? "unknown"}`
+        );
+      }
+    });
+  }
+
   for (const endpoint of config.webhookUrls)
     add("webhook", endpoint, async (item) => {
       const body = {
