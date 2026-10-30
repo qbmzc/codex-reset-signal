@@ -2,13 +2,69 @@
   "version": 2,
   "username": "thsottiaux",
   "keyword": "reset",
-  "userId": null,
-  "sinceId": null,
-  "lastCheckedAt": null,
-  "lastSuccessAt": null,
-  "lastRunStatus": "waiting-for-first-run",
-  "postsScanned": 0,
-  "matches": [],
+  "userId": "1953337039510003712",
+  "sinceId": "2116072117540417651",
+  "lastCheckedAt": "2026-10-30T10:23:11.792Z",
+  "lastSuccessAt": "2026-10-30T10:23:11.792Z",
+  "lastRunStatus": "bootstrapped",
+  "postsScanned": 20,
+  "matches": [
+    {
+      "version": "41e2cbc827fd7f3e134d57e3399dca1567f6cd5a1510eb3e471d695bbe32949f",
+      "id": "2115851621137784832",
+      "canonicalId": "2115851621137784832",
+      "text": "Graduating from The Reset Company to The Token Company.",
+      "createdAt": "2026-10-29T17:01:51.000Z",
+      "url": "https://x.com/thsottiaux/status/2115851621137784832",
+      "media": [],
+      "detectedAt": "2026-10-30T10:23:11.792Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Graduating from The Reset Company to The Token Company",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Graduating from The Reset Company to The Token Company",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": []
+    }
+  ],
   "outbox": [],
-  "seen": {}
+  "seen": {
+    "2115329600897319076": "4e6b929e8003b3b57c9219338c38897363ff63d2ddd5053334ee396b376d0a98",
+    "2115330127886463244": "c5e78a303d2682f0170b5276d1f2659c413a293537d86d3a8b0827105be040e1",
+    "2115473170279080149": "1cca13fe4b3a129ce7743b3f38a5844650e1417cbe05092029d7c2293d29c1b2",
+    "2115473280677363810": "03c3670bfd06f6211699a841c5ea9277061ada237a3850f986d4810c0a14f656",
+    "2115588390414581916": "114fb17887b7831d78ffc83f469f5f452463162654cfb2cbb291a0e5569fb19a",
+    "2115622002581188681": "3c9c86b377d54385c34f4b6323c16131f61e4541a9c3a63c6d26b9177e641357",
+    "2115648685069742441": "b4f67c3649e0fe237a45865c442520eb6c50b9b4872ff9222ae167d3cf1f8e93",
+    "2115648938149818370": "efa9253050c7572d56456578267faa086d329d702cf5c3348a0511704ce56c5f",
+    "2115649073302904875": "d8e2e9496e44860fd929f1e13659d0b8b84fbfdfb7143ea68105981aa2191f62",
+    "2115847315173069025": "e938869f6d32597f0664b3fe4e8c14d6eb82afc79294159aeadcbf979453b236",
+    "2115847364670030218": "841295eaa0d6e2a4f410e7e646a565f681e6284a174c0ce86c9674ffd77fe94c",
+    "2115850175868727621": "858d40140426f71c162979ade8a5a061f606c1f62b6e691532b0b5e3de17af2a",
+    "2115851621137784832": "41e2cbc827fd7f3e134d57e3399dca1567f6cd5a1510eb3e471d695bbe32949f",
+    "2115851811576053881": "3ffeeea7cb079ec71bd353a8f9e02ffb721a3defdabf165e194b1147a9f5372b",
+    "2115890336107233347": "5e3d0a9bda741770c71f62a45ed235e39a3628fea49660fb939a223090020621",
+    "2115974268936712436": "eb03c93713f8ea348a0f441a4370808c8933b046e283754e0d0a80ff2c6db88b",
+    "2116044153515815186": "6cffdd7f9755a2d4cd1d9f8c71ffa5bb90a70e38e2185d73eab2c6ff768a37bd",
+    "2116045727642366367": "c94f3d825349d1c7e8bc572a69d177490010bf3d25d4c7fe250fd1a1b22c2500",
+    "2116046569963421719": "6a88b33a93f70a13d486c471dee8d4062e59bf27aa4fd6ac8348057a06799a67",
+    "2116072117540417651": "77ba71a592541136220d7a17bfb652515bc143f1335ac3803fcb4228a7f03911"
+  },
+  "latestObservedPost": {
+    "id": "2116072117540417651",
+    "canonicalId": "2116072117540417651",
+    "text": "@ajambrosino No hype, just shipping",
+    "createdAt": "2026-10-30T07:38:02.000Z",
+    "url": "https://x.com/thsottiaux/status/2116072117540417651",
+    "media": []
+  },
+  "eventParserVersion": 5
 }
