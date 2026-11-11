@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-11T02:52:27.084Z",
+  "updatedAt": "2026-11-11T09:54:55.532Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-11-11T02:52:27.069Z",
-    "lastSuccessAt": "2026-11-11T02:52:27.069Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-11-11T09:54:54.102Z",
+    "lastSuccessAt": "2026-11-11T09:54:54.102Z",
+    "lastRunStatus": "checked-3-posts"
   },
   "latestObservedPost": {
-    "id": "2120304649807020238",
-    "text": "@embw_l0x We're assembling one of the best teams ever and I do talk to folks at Anthropic every once in a while. Couldn't be more excited for the months ahead.",
-    "url": "https://x.com/thsottiaux/status/2120304649807020238",
-    "postCreatedAt": "2026-11-10T23:56:36.000Z"
+    "id": "2120411235716063700",
+    "text": "@iso_morph Many such cases.",
+    "url": "https://x.com/thsottiaux/status/2120411235716063700",
+    "postCreatedAt": "2026-11-11T07:00:08.000Z"
   },
   "latest": {
     "reset": null,
@@ -44,6 +44,58 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "c579a4bdbfd63ee59b12e3cbf573c888c235cf951566a35314f55135a2a37573",
+      "id": "2120410480204525936",
+      "text": "Thursday is feeling codexy to me. Perhaps also a good time for a banked reset.",
+      "url": "https://x.com/thsottiaux/status/2120410480204525936",
+      "postCreatedAt": "2026-11-11T06:57:08.000Z",
+      "detectedAt": "2026-11-11T09:54:54.101Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Perhaps also a good time for a banked reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Perhaps also a good time for a banked reset",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "deliveryChannels": [
+        "dingtalk"
+      ],
+      "origin": "live"
+    },
+    {
+      "version": "a6fabd09590cac47be5bd963153253f6474ae46827adab01a0182a0b02185c1d",
+      "id": "2120410006273380750",
+      "text": "It’s been a while without resets. Maybe I should come back out of the basement",
+      "url": "https://x.com/thsottiaux/status/2120410006273380750",
+      "postCreatedAt": "2026-11-11T06:55:15.000Z",
+      "detectedAt": "2026-11-11T09:54:54.073Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "It’s been a while without resets",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "It’s been a while without resets",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [
+        "dingtalk"
+      ],
+      "origin": "live"
+    },
     {
       "version": "968ea4e2d85d2fccdde068e8c8c332ee6bf0c9be3748cd7bfc83a6b8dbfa8074",
       "id": "2119308687676432672",
