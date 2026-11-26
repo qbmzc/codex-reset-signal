@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-25T19:17:19.921Z",
+  "updatedAt": "2026-11-26T02:16:07.030Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-11-25T19:17:19.917Z",
-    "lastSuccessAt": "2026-11-25T19:17:19.917Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-11-26T02:16:07.024Z",
+    "lastSuccessAt": "2026-11-26T02:16:07.024Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2125494608826372329",
-    "text": "@jxnlco very tool of you",
-    "url": "https://x.com/thsottiaux/status/2125494608826372329",
-    "postCreatedAt": "2026-11-25T07:39:39.000Z"
+    "id": "2125678401541583217",
+    "text": "@charliermarsh This man is unstoppable",
+    "url": "https://x.com/thsottiaux/status/2125678401541583217",
+    "postCreatedAt": "2026-11-25T19:49:58.000Z"
   },
   "latest": {
     "reset": null,
